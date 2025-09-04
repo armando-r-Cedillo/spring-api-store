@@ -12,7 +12,7 @@ import java.util.Optional;
 public class ProductService {
     @Autowired
     private ProductRepository productRepository;
-
+    private boolean valor;
     public List<Product> getAll(){
         return productRepository.getAll();
     }
