@@ -1,12 +1,10 @@
 package com.project.project1.persistence.crud;
 import com.project.project1.persistence.entity.Producto;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 import java.util.Optional;
 
 
-public interface ProductoCrudRepository extends CrudRepository<Producto,Integer> {
+public interface ProductoCrudRepository  {
 
     /*
     Si se utiliza la notacion Query (QUERY NATIVO) se puede cambiar el nombre del metodo

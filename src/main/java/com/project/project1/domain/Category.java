@@ -5,6 +5,10 @@ public class Category {
     private String Category;
     private boolean active;
 
+    public Category(int categoryId) {
+        this.categoryId = categoryId;
+    }
+
     public int getCategoryId() {
         return categoryId;
     }

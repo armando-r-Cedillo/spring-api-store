@@ -7,9 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.http.HttpResponse;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")
@@ -31,7 +29,7 @@ public class ProductController {
     }
     @GetMapping("/scarse/{quantity}")
     public ResponseEntity<List<Product>> getScarseProducts(@PathVariable("quantity") int quantity){
-        return productService.getScarseProducts(quantity)
+        return productService.getScarsProducts(quantity)
                 .map(products -> new ResponseEntity<>(products, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }

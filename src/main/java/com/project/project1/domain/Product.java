@@ -9,6 +9,16 @@ public class Product {
     private boolean active;
     private Category category;
 
+    public Product(String name, int productId, int categoryId, int stock, double price, boolean active, Category category) {
+        this.name = name;
+        this.productId = productId;
+        this.categoryId = categoryId;
+        this.stock = stock;
+        this.price = price;
+        this.active = active;
+        this.category = category;
+    }
+
     public int getProductId() {
         return productId;
     }
