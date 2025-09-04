@@ -19,7 +19,7 @@ public class ProductController {
 
     @GetMapping("/all")
     public ResponseEntity<List<Product>> getAll() {
-        System.out.println("agregamos imprecion del getAll");
+        System.out.println("modificado imprecion del getAll");
         return new ResponseEntity<>(productService.getAll(), HttpStatus.OK);
     }
 
